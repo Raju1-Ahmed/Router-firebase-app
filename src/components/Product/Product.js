@@ -5,14 +5,14 @@ import app from '../../firebasei.init';
 
 const auth = getAuth(app)
 
-const Home = () => {
-    const [user] =  useAuthState(auth);
+const Product = () => {
+    const [user] = useAuthState(auth);
     return (
         <div>
-            <h2>This isn ...{user? user.displayName : 'not a name...'}</h2>
-      
+            <h2>knock knock ! Who is There..</h2>
+            <h5>{user? user.displayName : 'nothing!'}</h5>
         </div>
     );
 };
 
-export default Home;
+export default Product;
